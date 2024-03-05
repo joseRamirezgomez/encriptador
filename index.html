@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="encriptador">
+            <main  placeholder="ingrese algo"></main>
+            <textarea  id="textinput" cols="30" rows="10" placeholder="ingresa aqui el texto recuerda que no puedes utilizar mayusculas o caracteres especiales."></textarea>
+            <div class="botones">
+                <button id="encriptar" onclick="encriptar()" >ENCRIPTAR</button>
+                <button id="desencriptar" onclick="desencriptar()">DESCIFRAR</button>
+            </div>
+        </div>
+        <div class="container_output">
+            <textarea name="textarea" rows="10" cols="50" id="areatext" disabled></textarea>
+            
+            <div class="imagensin">
+                <img src="./svg/mensaje.svg" class="imagentext" alt="">
+                <img src="./svg/text.svg" class="imagentext2" alt="">
+            </div>
+            <div class="copiado"> <img src="./svg/check.svg" alt=""> El mensaje ha sido copiado</div>
+            <button class="copiar" onclick="copy()">COPIAR</button>
+        </div>
+    </section>
+    <div class="footer">
+        <h1>CHALLENG ENCRIPTADOR</h1>
+        <img src="https://camilo-orjuela-personal-portafolio.vercel.app/img/aluraoracle.jpg" alt="logo_oracle" style="width: 100px; height: auto;">
+        <p>Desarrollado por: Jose Ramirez </p>
+        <div>
+            <a href="www.linkedin.com/in/jose-ramirez-282368275"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png" alt="LinkedIn" style="width: 60px; height: auto;"></a>
+            <a href="https://github.com/joseRamirezgomez"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub" style="width: 60px; height: auto;"></a>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
